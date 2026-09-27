@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Lisa Liu · sketchbook ✦ art</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@300;400;500;600&amp;family=Caveat:wght@400..700&amp;display=swap" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/><link href="immersive-pages.css" rel="stylesheet"/></head><body class="immersive-page-body page-sketchbook"><div class="page-sky"></div><div class="page-grain"></div><div aria-hidden="true" class="page-particles"></div><header class="immersive-topbar"><a class="page-brand" href="index.html">Lisa Liu ✦</a><nav aria-label="Site navigation" class="page-nav"><a href="index.html">Universe</a><a href="research.html">Research</a><a href="projects.html">Projects</a><a href="art.html">Art</a><a href="music.html">Music</a><a href="skills.html">Skills</a><a href="teaching.html">Teaching</a><a href="gallery.html">Gallery</a><a href="journal.html">Journal</a></nav><div class="page-actions"><a href="Lisa-Liu-CV.pdf" target="_blank">CV ↗</a><button id="pageLive" type="button">◎ Live</button></div></header><main class="immersive-main" data-format-pass="v15"><div class="page-hero"><div class="page-kicker">Lisa Liu · science × art × story</div><h1>Sketchbook Collection</h1><p>A collection of tiny studies, character experiments, anatomy drawings, composition work, and movie-inspired art.</p></div><section class="legacy-content">
+
+<!-- Filter Categories -->
+<div style="display: flex; gap: 1rem; margin: 2rem 0; flex-wrap: wrap;">
+<span class="filter-badge active" onclick="filterSketches('all')">All Sketches</span>
+<span class="filter-badge" onclick="filterSketches('digital')">Digital</span>
+<span class="filter-badge" onclick="filterSketches('traditional')">Traditional</span>
+</div>
+<div class="sketch-grid" id="sketchGallery">
+<div class="sketch-item" data-category="digital">
+<img alt="Color Practice" src="https://drive.google.com/thumbnail?id=1K5x4N7dZNOInlUGAjtuq-T5a6Won5MX3&amp;sz=w1000"/>
+<div class="sketch-caption">Color Practice · Feb 2026</div>
+</div>
+<div class="sketch-item" data-category="traditional">
+<img alt="character design" src="https://drive.google.com/thumbnail?id=1Q2P1WD7W591KS59tNrPSwIfXkHpqvKwC&amp;sz=w1000"/>
+<div class="sketch-caption">Character Design · Dec 2025</div>
+</div>
+<div class="sketch-item" data-category="digital">
+<img alt="human anatomy" src="https://drive.google.com/thumbnail?id=1znPjSVRd-Ru2ad_tXSyKt6CuA42CLhcz&amp;sz=w1000"/>
+<div class="sketch-caption">Human Anatomy · Nov 2025</div>
+</div>
+<div class="sketch-item" data-category="digital">
+<img alt="value study" src="https://drive.google.com/thumbnail?id=1mDHYCjTPXGS8nZXxJ13NGZmahTxjn6hu&amp;sz=w1000"/>
+<div class="sketch-caption">Value Study · Oct 2025</div>
+</div>
+<div class="sketch-item" data-category="digital">
+<img alt="composition" src="https://drive.google.com/thumbnail?id=1Nq6N9q79vCQW81HPFDJ-B_XqnuJkEt56&amp;sz=w1000"/>
+<div class="sketch-caption">Composition Study · Oct 2025</div>
+</div>
+<div class="sketch-item" data-category="digital">
+<img alt="color key study" src="https://drive.google.com/thumbnail?id=1KUgEsLYIGanRik6kziMpOq2K8d34cj0E&amp;sz=w1000"/>
+<div class="sketch-caption">Color Key Study · Sept 2025</div>
+</div>
+<div class="sketch-item" data-category="digital">
+<img alt="observational drawing" src="https://drive.google.com/thumbnail?id=1e3AQvhHsbG-Inq7SWXlG_NEtPNtj9bSu&amp;sz=w1000"/>
+<div class="sketch-caption">Observational Drawing · Sept 2025</div>
+</div>
+<div class="sketch-item" data-category="traditional">
+<img alt="architecture sketch" src="https://drive.google.com/thumbnail?id=1PidI7qipFMcztmL8VsRUw9Nc8Ez4uQzw&amp;sz=w1000"/>
+<div class="sketch-caption">Architecture Sketch · May 2024</div>
+</div>
+<div class="sketch-item" data-category="traditional">
+<img alt="Movie Fan Art" src="https://drive.google.com/thumbnail?id=1tCkhkWANowK13Yjut_zX78xDmGrWm6Re&amp;sz=w1000"/>
+<div class="sketch-caption">Movie Fan Art · May 2024</div>
+</div>
+<div class="sketch-item" data-category="traditional">
+<img alt="Color Practice" src="https://drive.google.com/thumbnail?id=1FEivkkf5WgO70xu_OdS0x1F_c6-9xueG&amp;sz=w1000"/>
+<div class="sketch-caption">Color Practice · Aug 2023</div>
+</div>
+</div>
+<!-- Fun Art Fact -->
+<div style="background: white; border-radius: 30px; padding: 1.5rem; margin: 2rem 0; border-left: 12px solid #ff6b6b;">
+<div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+<span style="font-size: 2.5rem;">✏️</span>
+<p style="color: #054a47; font-size: 1.1rem; margin: 0;">Every sketch here started as a tiny doodle in the corner of my notebook during class.</p>
+</div>
+</div>
+</section></main><footer class="immersive-footer"><span>✦ Website designed with 🫧 by Lisa Liu ✦</span><span>Press H for home · C for CV · M for music</span></footer><div class="page-progress"></div><script src="immersive-pages.js"></script><script>
+    function filterSketches(category) {
+      const sketches = document.querySelectorAll('.sketch-item');
+      const filters = document.querySelectorAll('.filter-badge');
+      
+      filters.forEach(filter => {
+        filter.classList.remove('active');
+        if (filter.textContent.toLowerCase().includes(category) || 
+            (category === 'all' && filter.textContent.includes('All'))) {
+          filter.classList.add('active');
+        }
+      });
+      
+      sketches.forEach(sketch => {
+        if (category === 'all' || sketch.dataset.category === category) {
+          sketch.style.display = 'block';
+        } else {
+          sketch.style.display = 'none';
+        }
+      });
+    }
+  </script></body></html>
