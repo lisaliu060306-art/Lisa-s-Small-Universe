@@ -1233,6 +1233,24 @@ body::after {
     flex-wrap: wrap;
   }
 }
+.contact-grid{
+  display:grid;
+  grid-template-columns:1.3fr .7fr;
+  gap:25px
+}
+
+.contact-links{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px
+}
+
+.contact-links a{
+  padding:14px;
+  border:1px solid rgba(85,255,249,.2);
+  border-radius:18px;
+  text-decoration:none
+}
 
 .card[style*="display: flex"] {
   flex-wrap: wrap !important;
